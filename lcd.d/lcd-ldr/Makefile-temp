@@ -1,0 +1,4 @@
+#ds18b20:
+#	python ds18b20.py
+temp:temp.o
+	gcc -o temp_test temp.c -lbcm2835

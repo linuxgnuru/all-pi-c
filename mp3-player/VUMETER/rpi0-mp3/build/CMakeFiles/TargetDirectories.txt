@@ -1,0 +1,3 @@
+/home/pi/src/pi/c/vu.d/rpi0-mp3/build/CMakeFiles/rebuild_cache.dir
+/home/pi/src/pi/c/vu.d/rpi0-mp3/build/CMakeFiles/edit_cache.dir
+/home/pi/src/pi/c/vu.d/rpi0-mp3/build/CMakeFiles/rpi0-mp3.dir

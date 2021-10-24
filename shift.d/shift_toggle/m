@@ -1,0 +1,2 @@
+shift_toggle:shift_toggle.o
+	gcc shift_toggle.c -o shift_toggle -lwiringPi

@@ -1,0 +1,1 @@
+/usr/bin/cc     CMakeFiles/rpi0-mp3.dir/rpi0-mp3.c.o CMakeFiles/rpi0-mp3.dir/rotaryencoder.c.o  -o ../bin/rpi0-mp3 -rdynamic -lao -lmpg123 -lpthread -lm -lwiringPi -lwiringPiDev -lasound -lncurses 

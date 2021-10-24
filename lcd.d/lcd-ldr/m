@@ -1,0 +1,2 @@
+lcd-ldr:lcd-ldr.o
+	gcc lcd-ldr.c -o lcd-ldr -lwiringPi -lwiringPiDev# -lbcm2835

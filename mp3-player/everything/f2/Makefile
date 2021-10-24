@@ -1,0 +1,29 @@
+PROGNAME = f2
+DEBUG = -O2 -ggdb
+CFLAGS = $(DEBUG) -Wall -std=c11
+LIBS = -lwiringPi -lasound -lm
+CC = gcc
+#SRC = $(PROGNAME).c rotaryencoder.c
+SRC = $(PROGNAME).c
+OBJ =   $(SRC:.c=.o)
+
+ifeq ($(PREFIX),)
+	PREFIX := /usr/local
+endif
+
+all: clean $(PROGNAME)
+
+$(PROGNAME): $(OBJ)
+	@$(CC) -o $@ $(OBJ) $(LIBS)
+	rm -f *.o
+
+.c.o:
+	@$(CC) -c $(CFLAGS) $< -o $@
+
+clean:
+	rm -f *.o $(PROGNAME)
+
+install: $(PROGNAME)
+	sudo install -d $(PREFIX)/bin/
+	sudo install -m 4755 $(PROGNAME) $(PREFIX)/bin/
+

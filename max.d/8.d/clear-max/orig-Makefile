@@ -1,0 +1,22 @@
+# 
+CC=g++
+# 
+CFLAGS=-Wall -lwiringPi
+
+all: clear-max
+#	ls -lh --color=auto
+
+#run: max7219
+#	ls -lh --color=auto
+#	./max7219 -DEBUG
+
+#runInit: max7219
+#	ls -lh --color=auto
+#	./max7219 -init -DEBUG
+
+clear-max: clear-max.cpp
+	$(CC) $(CFLAGS) clear-max.cpp -o clear-max
+
+clean:
+	rm -rf *o clear-max
+#	ls -lh --color=auto
